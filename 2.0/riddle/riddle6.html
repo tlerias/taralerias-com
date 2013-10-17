@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Riddle Mad House</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type = "text/javascript">
+
+function randomPage(){
+	var RandNumber = Math.floor(Math.random()*3);
+	return RandNumber;
+	
+}
+function guess(){
+var answer6 = window.document.r6.a6.value;
+
+if ((answer6 == "map") || (answer6 == "Map") || (answer6 == "MAP"))
+	{
+	var getLocation = randomPage();
+		var Newpage = new Array()
+	
+	Newpage[0]= "riddle9.html";
+	Newpage[1]= "riddle8.html";
+	Newpage[2]= "riddle3.html";
+	
+	location.href = Newpage[getLocation];	
+
+		
+		
+	}
+else {
+	window.location = "lose2.html";
+	
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<center>
+<div id="head">
+<h2>Riddle me this...</h2>
+</div>
+<div id="content">
+<table>
+
+
+
+<tr>
+<td><!-- Source: http://www.trickyriddles.com/riddle/3820-Seas-Without-Water/show/answer -->
+
+I have seas without water <br />
+I have forests without wood  <br />
+I have deserts without sand <br />
+I have houses with no brick<br />
+
+What am I?
+
+
+</td>
+</tr>
+<tr>
+<td>
+<form name = "r6">
+I am a <input type = "text" name = "a6" />
+<input type = "button" value = "Guess" class = "btn" onClick = "guess();" />
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+</center>
+
+</body>
+</html>
