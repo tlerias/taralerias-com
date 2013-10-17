@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Riddle Mad House</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type = "text/javascript">
+function randomPage(){
+	var RandNumber = Math.floor(Math.random()*3);
+	return RandNumber;
+	
+}
+function guess(){
+var answer4 = window.document.r4.a4.value;
+
+if ((answer4 == "tree") || (answer4 == "Tree") || (answer4 == "TREE"))
+	{
+	var getLocation = randomPage();
+		var Newpage = new Array()
+	
+	Newpage[0]= "riddle8.html";
+	Newpage[1]= "riddle9.html";
+	Newpage[2]= "riddle3.html";
+	location.href = Newpage[getLocation];
+
+		
+		
+	}
+else {
+	window.location = "lose2.html";
+	
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<center>
+<div id="head">
+
+<h2>Riddle me this...</h2>
+</div>
+<div id="content">
+<table>
+
+
+<tr>
+<td><!-- Source: http://www.trickyriddles.com/riddle/4194-What-am-I%3F/show/answer -->
+
+"I have hundreds of friends, smaller than thee, all of them are a part of me. Connected through live wires, my friends and I are scared of fires. Break me down and I shall fall. All will hear me, for I am tall." What am I?
+
+</td>
+</tr>
+<tr>
+<td>
+<form name = "r4">
+I am a <input type = "text" name = "a4" />
+<input type = "button" value = "Guess" class = "btn" onClick = "guess();" />
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+</center>
+</body>
+</html>

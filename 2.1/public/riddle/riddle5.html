@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Riddle Mad House</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type = "text/javascript">
+
+function guess(){
+var answer5 = window.document.r5.a5.value;
+
+if ((answer5 == "three") || (answer5 == "3") || (answer5 == "Three"))
+	{
+		window.location = "win.html";
+		
+		
+	}
+else {
+	window.location = "lose5.html";
+	
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<center>
+<div id="head">
+<h2>Riddle me this...</h2>
+</div>
+<div id="content">
+<table>
+
+
+<tr>
+<td><!-- Source: http://www.trickyriddles.com/riddle/1529-Exclusive-Club/show/answer -->
+
+A man wanted to enter an exclusive club but did not know the password that was required. He waited by the door and listened. A club member knocked on the door and the doorman said "twelve." The member replied "six " and was let in. A second member came to the door and the doorman said "six." The member replied "three" and was let in. The man thought he had heard enough and walked up to the door. The doorman said "ten" and the man replied "five." but he was not let in. What should have he said?
+
+</td>
+</tr>
+<tr>
+<td>
+<form name = "r5">
+<input type = "text" name = "a5" />
+<input type = "button" value = "Guess" class = "btn" onClick = "guess();" />
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+</center>
+</body>
+</html>
