@@ -37,16 +37,19 @@ nav a:hover{
 	text-decoration:none;
 	color:red;
 }
+
+nav li{
+	padding-top: 25px;
+}
+
+/* Bootstrap Override */
+
 .nav > li > a:hover {
     color: red;
     background-image: url(../images/light_patch.jpg);
 
 }
 
-
-nav li{
-	padding-top: 25px;
-}
 
 
 /******************
@@ -60,6 +63,7 @@ nav li{
 	font-size: 2em;
 	font-weight: bold;
 }
+
 
 #about, #projects{
 	padding:5% 10% 5% 10%;
