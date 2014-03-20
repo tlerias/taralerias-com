@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image:url('images/crapsboardPL.jpg');
+	background-repeat:no-repeat;
+	background-color:#999999;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#CCCCCC;
+}
+
+
+#main{
+	position:absolute;
+	left:265px;
+	top:35px;
+	text-align:center;
+
+}
+
+.wintext{
+	color:blue;
+	font-weight:bold;
+	
+	
+}
+.losetext{
+	color:red;
+	font-weight:bold;
+	
+	
+}
+.drawtext{
+	color:yellow;
+	font-weight:bold;
+	
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Trivial Pursuit - Score</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id = "content">
+<p><img src = 'images/title.png' alt = 'title' /></p>
+<?php
+
+
+$dbc = @mysqli_connect ("sql5c40b.carrierzone.com", "taralerias629126", "908tBuffs" , "phpmy1_taralerias_com") OR die (' Connection to MySQL failed: ' . mysqli_connect_error() );
+
+$sql = "SELECT fname, lname, counter FROM users WHERE finish = '1' ORDER BY counter ASC";
+$result = mysqli_query($dbc,$sql);
+
+$num = mysqli_num_rows($result);
+		echo "This game has been played " . $num . " times. <br />";
+
+
+
+echo '<table align = "center" cellpadding = "3">
+		<tr><td align = "left"><em> First Name</em></td><td align = "left"><em> Last Name</em> </td><td align = "left"><em> Score </em></td></tr>';	
+	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+	{
+	
+	
+	echo '<td>' . $row['fname'] . '</td><td>' . $row['lname'] . '</td><td>' . $row['counter'] . '</td></tr>';
+	
+		
+	
+	}
+mysqli_free_result($result);	
+
+ mysqli_close($dbc);
+
+
+?>
+<a href = 'rules.html'> Play Again </a>
+</div>
+</body>
+</html>
