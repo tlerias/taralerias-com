@@ -4,6 +4,7 @@
 	<style>
 		@import url('css/normalize.css') screen;
 		@import url('css/bootstrap.min.css') screen;
+		@import url('css/bootstrap-responsive.css') screen;
 		@import url('css/style.css') screen;
 		@import url('css/media.css') screen;
 
@@ -12,16 +13,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-20825142-3', 'taralerias.com');
-	  ga('send', 'pageview');
-
-	</script>
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -60,10 +51,10 @@
 	</header>
 	<section id="about">
 		<div class="row">
-			<div class="col-md-10 title">
+			<div class="col-md-10 title hidden-phone">
 				<p>About Me</p>
 			</div>
-			<div class="col-md-2 small pull-right">
+			<div class="col-md-2 small pull-right hidden-phone">
 				<p><span class="glyphicon glyphicon-chevron-up"></span> <a href="#">back to the top</a></p>
 			</div>
 
@@ -73,7 +64,7 @@
 			<div class="col-md-6">
 				<img src="images/headshot.png" alt="profile picture" >
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 content">
 
 				<p>As embarrassing as it is to admit, my passion for technology and arts stems from my addiction to Neopets in middle school. I would go on Neopets because they would let users edit the HTML on their homepages. This is my earliest involvement with HTML, CSS and Adobe Photoshop. I used my Neopets homepage as an expression of myself back then, and I still use HTML, CSS and Adobe Photoshop (with the addition of several other programs and languages) to express myself today.</p>
 
@@ -143,5 +134,16 @@
 		<p>&copy; Tara Lerias</p>
 
 	</footer>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-20825142-3', 'taralerias.com');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>

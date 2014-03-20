@@ -2,7 +2,10 @@
 /******************
 	General
 *****************/
+body{
+	background-image: url(../images/light_patch.jpg);
 
+}
 a:link, a:visited{
 	text-decoration: none;
 	color:black;
@@ -24,7 +27,6 @@ nav{
 	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(75,75,75,1)); /* Standard syntax (must be last) */
 	border-radius: 5px;
 	color:white;
-	box-shadow: 25px 25px 5px #888888;
 }
 
 nav a:link, nav a:visited{
@@ -60,20 +62,18 @@ nav li{
 	text-align: left;
 	padding-bottom: 5%;
 	color:red;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
 }
 
-
+.content{
+	padding-top: 5%;
+}
 #about, #projects{
 	padding:5% 10% 5% 10%;
 
 }
-#about {
-	background-image: url(../images/light_patch.jpg);
 
-	
-}
 
 #about img{
 	border-radius: 100%;

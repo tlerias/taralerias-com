@@ -21,12 +21,35 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+	nav{
+		background: none;
+		color:red;
+	}
+	nav a:link, nav a:visited{
+		text-decoration: none;
+		color:red;
+
+	}
+	.nav > li > a:hover {
+	    color: black;
+
+	}
+
 	.nav-pills>li {
 		float: left;
 		padding:0;
 	}
 	.headliner{
 		text-align: center;
+	}
+	#about img{
+	border-radius: 0;
+}
+	#projects{
+		min-height: 500px;
+	}
+	.carousel{
+		min-height: 300px;
 	}
 
 }
