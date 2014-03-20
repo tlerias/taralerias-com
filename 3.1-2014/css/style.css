@@ -1,0 +1,94 @@
+
+a:link, a:visited{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+	text-decoration: none;
+	color:red;
+}
+.title{
+	text-align: left;
+	padding-bottom: 5%;
+	color:red;
+	font-size: 2em;
+	font-weight: bold;
+}
+nav{
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(75,75,75,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(75,75,75,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(75,75,75,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(75,75,75,1)); /* Standard syntax (must be last) */
+	border-radius: 5px;
+	color:white;
+	box-shadow: 25px 25px 5px #888888;
+}
+
+nav a:link, nav a:visited{
+	text-decoration: none;
+	color:white;
+
+}
+
+nav a:hover{
+	text-decoration:none;
+	color:red;
+}
+.nav > li > a:hover {
+    color: red;
+    background-image: url(../images/light_patch.jpg);
+
+}
+
+
+nav li{
+	padding-top: 25px;
+}
+
+#about, #projects{
+	padding:5% 10% 5% 10%;
+
+}
+#about {
+	background-image: url(../images/light_patch.jpg);
+
+	
+}
+
+#about img{
+	border-radius: 100%;
+	max-width: 100%;
+	padding-bottom: 5%;
+}
+
+
+#projects{
+	background-image: url(../images/bg2.jpg);
+	margin: 0 auto 0 auto;
+
+}
+
+#projects a:link, #projects a:visited{
+	color:white;
+}
+#projects a:hover{
+	color:red;
+	height: 100%;
+}
+
+footer{
+	padding:25px 25px;
+	clear: both;
+	text-align: center;
+}
+
+footer a:link, footer a:visited{
+	text-decoration: none;
+	color:black;
+
+}
+footer a:hover{
+	text-decoration:none;
+	color:red;
+}

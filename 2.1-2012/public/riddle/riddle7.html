@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Riddle Mad House</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type = "text/javascript">
+function randomPage(){
+	var RandNumber = Math.floor(Math.random()*2);
+	return RandNumber;
+	
+}
+function guess(){
+var answer7 = window.document.r7.a7.value;
+
+if ((answer7 == "last name") || (answer7 == "a last name") || (answer7 == "Last Name") || (answer7 == "Lastname") || (answer7 == "lastname")  || (answer7 == "a lastname"))
+	{
+	window.location = "riddle5.html";
+		
+		
+	}
+else {
+	window.location = "lose4.html";
+	
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<center>
+<div id="head">
+
+<h2>Riddle me this...</h2>
+</div>
+<div id="content">
+<table>
+
+
+<tr>
+<td><!-- Source: http://www.trickyriddles.com/riddle/911-What-Do-They-Have%3F/show/answer -->
+
+Schwarzenegger has a big one, Michael j. Fox has a small one, Madonna doesn't have one, the Pope doesn't use his, and Clinton uses his all the time. What is it?
+
+</td>
+</tr>
+<tr>
+<td>
+<form name = "r7">
+<input type = "text" name = "a7" />
+<input type = "button" value = "Guess" class = "btn" onClick = "guess();" />
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+</center>
+
+</body>
+</html>

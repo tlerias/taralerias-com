@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family:garamond, Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	background-color:white;
+	
+	
+	
+	
+}
+
+#logo{
+	position:fixed;
+	top:50px;
+	left:25%;
+	
+	
+	
+	
+}
+
+#me{
+	position:fixed;
+	top:250px;
+	left:78px;
+		
+}
+
+#meContent{
+	position:fixed;
+	top:250px;
+	left:225px;
+	height:80px;
+	width:500px;
+
+	
+}
+
+
+#work{
+	position:fixed;
+	top:450px;
+	left:50px;
+		
+}
+
+#workContent{
+	position:absolute;
+	top:450px;
+	left:225px;
+	width:800px;
+	height:200px;
+	overflow:auto;
+	
+	
+	
+}
+
+#work1{
+	position:fixed;
+	top:250px;
+	left:78px;
+	
+}
+#Content{
+	position:absolute;
+	top:250px;
+	left:225px;
+	width:800px;
+	height:400px;
+	overflow:auto;
+	
+	
+}
+#Contentme{
+	position:absolute;
+	top:250px;
+	left:225px;
+	overflow:visible;
+	
+	
+	
+}
+#Contentmed{
+	position:absolute;
+	top:250px;
+	left:300px;
+	width:800px;
+	height:400px;
+	overflow:auto;
+
+	
+}
+#Contentlong{
+	position:absolute;
+	top:250px;
+	left:325px;
+	width:800px;
+	height:400px;
+	overflow:auto;
+	
+	
+	
+}
+a img{
+	border-width:0px;
+	
+}
+
+	
+
+.caption{
+	top:125px;	
+	color:#9933cc;
+	
+}
+
+.imglink{
+		position:relative;	
+		top:0px;
+		width:150px;
+	
+	
+}
+
+.table{
+	padding:5px;
+}
+
+a:link{
+	color:#9933cc;
+	text-decoration:none;
+}
+a:hover{
+	color:#9933cc;
+	font-weight:bold;	
+	
+}
+a:visited{
+	color:#9933cc;
+	text-decoration:none;
+}

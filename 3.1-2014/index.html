@@ -1,0 +1,138 @@
+<!Doctype html>
+<html>
+<head>
+	<style>
+		@import url('css/normalize.css') screen;
+		@import url('css/bootstrap.min.css') screen;
+		@import url('css/style.css') screen;
+		@import url('css/media.css') screen;
+
+	</style>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tara Lerias</title>
+
+	<script type="text/javascript">
+		$(function() {
+			$.localScroll();
+			$('.carousel').carousel()
+		});	
+
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="container-fluid">
+	    	<div class="navbar">
+	        	<div class="row">
+	        		<div class="col-md-6 headliner">
+	        			<p><h1><a href="index.html">Tara Lerias</a></h1></p>
+	        		</div>
+                    <div class="col-md-6">
+                        <ul class="nav pull-right nav-pills">
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#projects">Work</a></li>
+                            <li><a href="http://www.linkedin.com/pub/tara-lerias/22/a8a/51a" target="blank">Linkedin</a></a></li>
+                            <li><a href="https://github.com/tlerias" target="blank">Github</a></li>
+                            <li><a href="http://hashrocketeer.com" target="blank">Hashrocketeer</a></li>
+                            <li><a href="http://rantsandtangents.com" target="blank">Rants</a><li>
+                        </ul>               
+                    </div>
+                </div>
+	    	</div>
+		</nav>
+	</header>
+	<section id="about">
+		<div class="row">
+			<div class="col-md-10 title">
+				<p>About Me</p>
+			</div>
+			<div class="col-md-2 small pull-right">
+				<p><span class="glyphicon glyphicon-chevron-up"></span> <a href="#">back to the top</a></p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/headshot.png" alt="profile picture" >
+			</div>
+			<div class="col-md-6">
+
+				<p>As embarrassing as it is to admit, my passion for technology and arts stems from my addiction to Neopets in middle school. I would go on Neopets because they would let users edit the HTML on their homepages. This is my earliest involvement with HTML, CSS and Adobe Photoshop. I used my Neopets homepage as an expression of myself back then, and I still use HTML, CSS and Adobe Photoshop (with the addition of several other programs and languages) to express myself today.</p>
+
+				<p>I was born and raised on Long Island, NY. I followed the mountains and my love for snowboarding to Boulder, CO. Having attended school at University of Colorado for four years helped me recognize my adoration for camping, hiking and yoga. I usually have my co-pilot, Lola, by my side - she's living proof that a dog is a woman's best friend. After graduation from the University of Colorado in May 2012, I immediately went into a job at a software startup where I put their Support Department into place and transitioned into a Jr. Product Manager position. Having managed developers, I came to the realization that I was managing the people whom I admired and aspired to be so I recently switched gears and moved back to New York to attend Fullstack Academy in NYC. Now I'm very proud to say that I am pursing my dreams and passion for software development.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="projects"> 
+		<div class="row">
+			<div class="col-md-10 title">
+				<p>Work</p>
+			</div>
+			<div class="col-md-2 small pull-right">
+				<p><span class="glyphicon glyphicon-chevron-up"></span> <a href="#">back to the top</a></p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel" data-slide-to="1"></li>
+					    <li data-target="#carousel" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+
+					    <div class="item active">
+					      <img src="images/code_shot.png" alt="...">
+					      <div class="carousel-caption">
+
+						    <h3>Caption</h3>
+						    <p>Project goes here.</p>
+
+					      </div>
+					     </div>
+
+						<div class="item">
+					      <img src="images/code_shot.png" alt="...">
+					      <div class="carousel-caption">
+
+					    	<h3>Caption</h3>
+					    	<p>Goes Here</p>
+
+				          </div>
+				        </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:tlerias@gmail.com">tlerias @ gmail .com</a></p>
+		<p>&copy; Tara Lerias</p>
+
+	</footer>
+</body>
+</html>
